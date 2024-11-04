@@ -30,13 +30,13 @@ RelateUI is a comprehensive UI Kit designed to provide a consistent and visually
 To install RelateUI, run the following command:
 
 ```bash
-npm install relateui
+npm install @relatecom/relateui
 ```
 
 Or, if you're using yarn:
 
 ```bash
-yarn add relateui
+yarn add @relatecom/relateui
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ Import RelateUI in your React project and start using its components:
 
 ```jsx
 import React from 'react';
-import { Button } from 'relateui';
+import { Button } from '@relatecom/relateui';
 
 function App() {
   return (

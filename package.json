@@ -16,6 +16,9 @@
     }
   },
   "author": "relatecom<https://github.com/relatecom>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "vite",

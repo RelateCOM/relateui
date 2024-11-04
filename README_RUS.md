@@ -30,13 +30,13 @@ RelateUI — это всеобъемлющая UI-библиотека, пред
 Чтобы установить RelateUI, выполните следующую команду:
 
 ```bash
-npm install relateui
+npm install @relatecom/relateui
 ```
 
 Или, если вы используете yarn:
 
 ```bash
-yarn add relateui
+yarn add @relatecom/relateui
 ```
 
 ## Использование
@@ -45,7 +45,7 @@ yarn add relateui
 
 ```jsx
 import React from 'react';
-import { Button } from 'relateui';
+import { Button } from '@relatecom/relateui';
 
 function App() {
   return (
