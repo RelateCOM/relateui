@@ -16,10 +16,10 @@ export const Button: FC<IButtonProps> = ({
   children,
 }) => {
   const buttonClasses = twMerge(
-    "font-bold shadow-md active:scale-95 active:shadow-lg duration-200",
+    "rounded-xl font-bold shadow-md duration-200",
     sizeVariants[size as keyof typeof sizeVariants],
-    colorVariants[color as keyof typeof colorVariants],
-    disabled && "opacity-50 cursor-not-allowed",
+    !disabled && colorVariants[color as keyof typeof colorVariants],
+    disabled && "bg-base-100 text-base-content opacity-50 cursor-not-allowed",
     className
   );
   return (

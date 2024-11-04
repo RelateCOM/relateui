@@ -10,16 +10,11 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {
-  args: {
-    children: "Button",
-  },
-};
-
 export const Small: Story = {
   args: {
     children: "Button",
-    size: "sm",
+    size: "md",
+    color: "secondary"
   },
 };
 
@@ -34,5 +29,13 @@ export const Large: Story = {
   args: {
     children: "Button",
     size: "lg",
+  },
+}
+
+export const Disabled: Story = {
+  args: {
+    children: "Button",
+    disabled: true,
+    size: "md"
   },
 }
