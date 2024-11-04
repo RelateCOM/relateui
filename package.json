@@ -1,5 +1,5 @@
 {
-  "name": "relateui",
+  "name": "@relatecom/relateui",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -15,7 +15,7 @@
       "import": "./dist/relateui.es.js"
     }
   },
-  "author": "relatecom",
+  "author": "relatecom<https://github.com/relatecom>",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
