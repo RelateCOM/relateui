@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# RelateUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A free and open-source UI Kit for React, built with Tailwind CSS and Storybook, designed specifically for Relate products.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+RelateUI is a comprehensive UI Kit designed to provide a consistent and visually appealing user experience across all Relate products. Built with Tailwind CSS for rapid development and Storybook for easy component exploration, RelateUI offers a wide range of styled brand components to help you get started with your project quickly.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Tailwind CSS integration**: Leverage the power of Tailwind CSS for rapid development and customization.
+- **Storybook support**: Easily explore and interact with components using Storybook.
+- **Styled brand components**: Get started with a set of pre-designed, styled components tailored to the Relate brand.
+- **Highly customizable**: Tailor the UI Kit to your needs using Tailwind CSS's configuration options.
+- **Open-source**: Contribute to the project and help shape the future of RelateUI.
+
+## Installation
+
+To install RelateUI, run the following command:
+
+```bash
+npm install relateui
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Or, if you're using yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn add relateui
 ```
+
+## Usage
+
+Import RelateUI in your React project and start using its components:
+
+```jsx
+import React from 'react';
+import { Button } from 'relateui';
+
+function App() {
+  return (
+    <div>
+      <Button>Click me!</Button>
+    </div>
+  );
+}
+```
+
+## Components
+
+RelateUI offers a wide range of components, including:
+
+- **Buttons**: Primary, secondary, and tertiary buttons with various styles.
+- **Inputs**: Text inputs, password inputs, and number inputs with custom styles.
+- **Cards**: Cards with different layouts and styles.
+- **Alerts**: Success, warning, and error alerts.
+- **Modals**: Modal windows with various styles and layouts.
+
+## Customization
+
+RelateUI is highly customizable using Tailwind CSS's configuration options. You can adjust the colors, typography, spacing, and more to fit your project's needs.
+
+## Contributing
+
+We welcome contributions to RelateUI! If you'd like to contribute, please fork the repository and submit a pull request.
+
+## License
+
+RelateUI is released under the MIT License. See the [LICENSE file](LICENSE) for details.
+
+## Roadmap
+
+- [ ] Add more components to the UI Kit.
+- [ ] Improve documentation and examples.
+- [ ] Enhance customization options using Tailwind CSS.
+
+## Community
+
+Join our community to discuss RelateUI, share your experiences, and get help from other users:
+
+- [GitHub Discussions](https://github.com/relateui/relateui/discussions)
+
+We're excited to have you on board!
