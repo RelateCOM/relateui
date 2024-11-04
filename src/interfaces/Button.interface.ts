@@ -1,6 +1,6 @@
-import Colors from "../colors";
-import Size from "../sizes";
-import ButtonType from "../types/Button";
+import Colors from "../variables/colors";
+import Size from "../variables/sizes";
+import ButtonType from "../variables/types/Button";
 
 export interface IButtonProps {
   /**

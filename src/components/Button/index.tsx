@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
-import { IButtonProps } from "../interfaces/Button.interface";
+import { IButtonProps } from "../../interfaces/Button.interface";
 import colorVariants from "./colorsVariants";
 import sizeVariants from "./sizeVariants";
 
