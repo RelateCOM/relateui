@@ -1,5 +1,3 @@
-import components from "./components";
+import { Button, InputText } from "./components";
 
-export default {
-  components,
-}
+export { Button, InputText };
