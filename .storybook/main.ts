@@ -12,6 +12,17 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-themes",
+    {
+      name: "@storybook/addon-postcss",
+      options: {
+        cssLoaderOptions: {
+          importLoaders: 1,
+        },
+        postcssLoaderOptions: {
+          implementation: require("postcss"),
+        },
+      },
+    },
     "storybook-addon-tailwind-autodocs",
   ],
   framework: {
