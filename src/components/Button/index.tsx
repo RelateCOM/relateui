@@ -20,7 +20,7 @@ const Button: FC<IButtonProps> = ({
     sizeVariants[size as keyof typeof sizeVariants],
     !disabled && colorVariants[color as keyof typeof colorVariants],
     disabled && "bg-base-100 text-base-content opacity-50 cursor-not-allowed",
-    className
+    className,
   );
   return (
     <button
