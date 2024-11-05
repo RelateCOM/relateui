@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from ".";
+import Button from ".";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -13,8 +13,8 @@ type Story = StoryObj<typeof Button>;
 export const Small: Story = {
   args: {
     children: "Button",
-    size: "md",
-    color: "secondary"
+    size: "sm",
+    color: "secondary",
   },
 };
 
@@ -30,12 +30,12 @@ export const Large: Story = {
     children: "Button",
     size: "lg",
   },
-}
+};
 
 export const Disabled: Story = {
   args: {
     children: "Button",
     disabled: true,
-    size: "md"
+    size: "md",
   },
-}
+};

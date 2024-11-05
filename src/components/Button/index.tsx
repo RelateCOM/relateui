@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
-import { IButtonProps } from "../../interfaces/Button.interface";
 import colorVariants from "./colorsVariants";
 import sizeVariants from "./sizeVariants";
+import { IButtonProps } from "../../interfaces/Button.interface";
 
-export const Button: FC<IButtonProps> = ({
+const Button: FC<IButtonProps> = ({
   type = "button",
   label,
   onClick,
@@ -34,3 +34,5 @@ export const Button: FC<IButtonProps> = ({
     </button>
   );
 };
+
+export default Button;

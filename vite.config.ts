@@ -14,7 +14,9 @@ export default defineConfig({
     rollupOptions: {
       external: ["react"],
       output: {
-        globals: { react: "React" },
+        globals: {
+          react: "React",
+        },
       },
     },
   },
@@ -22,6 +24,7 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true,
+      tsconfigPath: "./tsconfig.app.json",
     }),
   ],
 });
