@@ -45,6 +45,7 @@ Import RelateUI in your React project and start using its components:
 
 ```jsx
 import React from 'react';
+import "@relatecom/relateui/style.css"
 import { Button } from '@relatecom/relateui';
 
 function App() {

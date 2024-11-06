@@ -10,13 +10,10 @@
   "module": "./dist/relateui.es.js",
   "exports": {
     "./package.json": "./package.json",
+    "./style.css": "./dist/style.css",
     ".": {
       "types": "./dist/relateui.es.d.ts",
       "import": "./dist/relateui.es.js"
-    },
-    "./dist/*.css": {
-      "import": "./dist/*.css",
-      "require": "./dist/*.css"
     }
   },
   "author": "relatecom<https://github.com/relatecom>",

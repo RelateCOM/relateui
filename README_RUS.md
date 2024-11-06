@@ -45,12 +45,13 @@ yarn add @relatecom/relateui
 
 ```jsx
 import React from 'react';
+import "@relatecom/relateui/style.css"
 import { Button } from '@relatecom/relateui';
 
 function App() {
   return (
     <div>
-      <Button>Нажмите меня!</Button>
+      <Button>Click me!</Button>
     </div>
   );
 }
