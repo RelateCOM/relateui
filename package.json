@@ -1,7 +1,7 @@
 {
   "name": "@relatecom/relateui",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.7",
   "type": "module",
   "files": [
     "dist"
@@ -13,6 +13,10 @@
     ".": {
       "types": "./dist/relateui.es.d.ts",
       "import": "./dist/relateui.es.js"
+    },
+    "./dist/*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
     }
   },
   "author": "relatecom<https://github.com/relatecom>",
