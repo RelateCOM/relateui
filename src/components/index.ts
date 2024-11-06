@@ -3,5 +3,5 @@ import InputText from "./InputText";
 
 export {
   Button,
-  InputText
+  InputText,
 }

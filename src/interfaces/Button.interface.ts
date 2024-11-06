@@ -1,42 +1,75 @@
-import Colors from "../variables/colors";
-import Size from "../variables/sizes";
-import ButtonType from "../variables/types/Button";
+/**
+ * Importing color, size, and button type variables.
+ */
+import { ButtonHTMLAttributes } from 'react';
+import Colors from '../variables/colors';
+import Size from '../variables/sizes';
+import ButtonType from '../variables/types/Button';
 
-export interface IButtonProps {
+/**
+ * Interface for button component properties.
+ */
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
-   * Button type (button, submit, reset)
+   * Type of the button (e.g. button, submit, reset).
+   * @type {ButtonType}
+   * @default undefined
    */
-  type?: ButtonType;
+  Type?: ButtonType;
+
   /**
-   * Button text
+   * Text to be displayed on the button.
+   * @type {string}
+   * @default undefined
    */
-  label?: string;
+  Label?: string;
+
   /**
-   * Function called when the button is clicked
+   * Function to be called when the button is clicked.
+   * @type {() => void}
+   * @default undefined
    */
-  onClick?: () => void;
+  OnClick?: () => void;
+
   /**
-   * Button color setttings with predefined values for text background and hovered colors
+   * Color settings for the button, including predefined values for text, background, and hovered colors.
+   * @type {Colors}
+   * @default undefined
    */
-  color?: Colors;
+  Color?: Colors;
+
   /**
-   * Button size
+   * Size of the button.
+   * @type {Size}
+   * @default undefined
    */
-  size?: Size;
+  Size?: Size;
+
   /**
-   * Flag indicating that the button is disabled
+   * Flag indicating whether the button is disabled.
+   * @type {boolean}
+   * @default false
    */
-  disabled?: boolean;
+  Disabled?: boolean;
+
   /**
-   * Additional class for the button
+   * Additional CSS class to be applied to the button.
+   * @type {string}
+   * @default undefined
    */
-  className?: string;
+  ClassName?: string;
+
   /**
-   * Button style
+   * Custom styles to be applied to the button.
+   * @type {React.CSSProperties}
+   * @default undefined
    */
-  style?: React.CSSProperties;
+  Style?: React.CSSProperties;
+
   /**
-   * Child elements of the button
+   * Child elements of the button.
+   * @type {React.ReactNode}
+   * @default undefined
    */
   children?: React.ReactNode;
 }
