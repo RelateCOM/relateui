@@ -1,4 +1,4 @@
-import { Button, InputText } from './components';
+import { Button, InputText, Avatar } from './components';
 import './index.css';
 
-export { Button, InputText };
+export { Button, InputText, Avatar };
